@@ -84,7 +84,99 @@
         background-color: #ccc;
         animation: typing-cursor 0.5s ease-in-out infinite;
       }
+      /* Responsive Adjustments */
+      @media screen and (max-width: 991px) {
+          /* Adjustments for tablets and smaller screens */
+          .home-slider .one-third {
+              width: 100%;
+              text-align: center;
+          }
 
+          .home-slider .one-third img {
+              max-width: 300px;
+              margin: 0 auto;
+              float: none !important;
+          }
+
+          .about-mf .about-img img {
+              max-width: 250px;
+              margin: 0 auto;
+              display: block;
+          }
+
+          .skill-mf {
+              margin-top: 30px;
+          }
+
+          .resume-wrap {
+              margin-bottom: 30px;
+          }
+
+          .blog-entry {
+              margin-bottom: 30px;
+          }
+      }
+
+      @media screen and (max-width: 767px) {
+          /* Mobile-specific adjustments */
+          body {
+              font-size: 14px;
+          }
+
+          .hero .text {
+              text-align: center;
+          }
+
+          #typing-animation {
+              font-size: 24px;
+          }
+
+          .contact-info .box {
+              margin-bottom: 30px;
+          }
+
+          .navbar-brand {
+              font-size: 1.2rem;
+          }
+
+          .navbar-toggler {
+              margin-right: 15px;
+          }
+      }
+
+      @media screen and (max-width: 480px) {
+          /* Very small mobile devices */
+          .home-slider .one-third img {
+              max-width: 250px;
+          }
+
+          h1 {
+              font-size: 1.8rem;
+          }
+
+          h2 {
+              font-size: 1.5rem;
+          }
+
+          .btn {
+              padding: 10px 15px !important;
+              font-size: 0.9rem;
+          }
+      }
+
+      /* Flexible Image and Container Adjustments */
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+
+      .container {
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+}
       @keyframes typing {
         from {
           width: 0;
@@ -145,15 +237,16 @@
             <li class="nav-item">
               <a href="#resume-section" class="nav-link"><span>Resume</span></a>
             </li>
+            <li class="nav-item">
+              <a href="#blog-section" class="nav-link"><span>Blogs</span></a>
+            </li>
             <!-- <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li> -->
             <li class="nav-item">
               <a href="#contact-section" class="nav-link"
                 ><span>Contact</span></a
               >
             </li>
-            <li class="nav-item">
-              <a href="#blog-section" class="nav-link"><span>Blogs</span></a>
-            </li>
+            
           </ul>
         </div>
       </div>
