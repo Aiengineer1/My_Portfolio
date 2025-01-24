@@ -85,6 +85,171 @@
         animation: typing-cursor 0.5s ease-in-out infinite;
       }
       /* Responsive Adjustments */
+      /* Universal Responsive Reset */
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+
+      body, html {
+          max-width: 100%;
+          overflow-x: hidden;
+      }
+
+      /* Flexible Container */
+      .container {
+          width: 90%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 15px;
+      }
+
+      /* Responsive Typography */
+      html {
+          font-size: 16px;
+      }
+
+      @media (max-width: 1200px) {
+          html {
+              font-size: 15px;
+          }
+      }
+
+      @media (max-width: 992px) {
+          html {
+              font-size: 14px;
+          }
+      }
+
+      @media (max-width: 768px) {
+          html {
+              font-size: 13px;
+          }
+      }
+
+      @media (max-width: 576px) {
+          html {
+              font-size: 12px;
+          }
+      }
+
+      /* Navigation Responsiveness */
+      .navbar {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+
+      @media (max-width: 768px) {
+          .navbar-nav {
+              flex-direction: column;
+              width: 100%;
+          }
+
+          .navbar-nav .nav-item {
+              text-align: center;
+              width: 100%;
+              padding: 10px 0;
+          }
+      }
+
+      /* Hero Section Responsiveness */
+      .hero .row {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+      }
+
+      @media (max-width: 992px) {
+          .hero .one-third,
+          .hero .one-forth {
+              width: 100%;
+              text-align: center;
+          }
+
+          .hero .one-third img {
+              max-width: 300px;
+              margin: 0 auto;
+          }
+      }
+
+      /* About Section Responsiveness */
+      .about-mf .row {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      @media (max-width: 992px) {
+          .about-mf .col-md-6 {
+              width: 100%;
+              margin-bottom: 20px;
+          }
+      }
+
+      /* Blog Section Responsiveness */
+      .blog-section .row {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      @media (max-width: 992px) {
+          .blog-section .col-md-4 {
+              width: 50%;
+              padding: 10px;
+          }
+      }
+
+      @media (max-width: 576px) {
+          .blog-section .col-md-4 {
+              width: 100%;
+          }
+      }
+
+      /* Image Responsiveness */
+      img {
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+      }
+
+      /* Contact Section Responsiveness */
+      .contact-info .row {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      @media (max-width: 768px) {
+          .contact-info .col-md-6 {
+              width: 100%;
+              margin-bottom: 20px;
+          }
+      }
+
+      /* Flexible Buttons */
+      .btn {
+          display: inline-block;
+          padding: 10px 20px;
+          margin: 5px;
+          width: auto;
+          max-width: 100%;
+      }
+
+      /* Responsive Animations and Transitions */
+      @media (prefers-reduced-motion: reduce) {
+          * {
+              animation: none !important;
+              transition: none !important;
+          }
+      }
       @keyframes typing {
         from {
           width: 0;
