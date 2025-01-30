@@ -87,68 +87,107 @@
       /* Responsive Adjustments */
       /* Universal Responsive Reset */
       * {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
 
-      body, html {
-          max-width: 100%;
-          overflow-x: hidden;
+      body,
+      html {
+        max-width: 100%;
+        overflow-x: hidden;
       }
 
       /* Flexible Container */
       .container {
-          width: 90%;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 0 15px;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
       }
 
       /* Responsive Typography */
       html {
-          font-size: 16px;
+        font-size: 16px;
+      }
+
+      .cert-entry a {
+        display: block;
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .cert-entry a:hover {
+        transform: scale(1.05);
       }
 
       @media (max-width: 1200px) {
-          html {
-              font-size: 15px;
-          }
+        html {
+          font-size: 15px;
+        }
       }
 
       @media (max-width: 992px) {
-          html {
-              font-size: 14px;
-          }
+        html {
+          font-size: 14px;
+        }
       }
 
       @media (max-width: 768px) {
-          html {
-              font-size: 13px;
-          }
+        html {
+          font-size: 13px;
+        }
       }
 
       @media (max-width: 576px) {
-          html {
-              font-size: 12px;
-          }
+        html {
+          font-size: 12px;
+        }
       }
 
       /* Navigation Responsiveness */
       .navbar {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
       }
 
       .navbar-nav {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      #certificates-section .cert-entry {
+        margin-bottom: 30px; /* Adjust gap between certificates if needed */
       }
 
+      #certificates-section .row.mb-5 {
+        margin-bottom: 50px; /* Adjust gap between rows */
+      }
+      #certificates-section .cert-entry {
+        margin-bottom: 30px; /* Adjust gap between certificates if needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #certificates-section .cert-entry img {
+        width: 100%; /* Make images take full width of the container */
+        height: 250px; /* Set a fixed height for consistency */
+        object-fit: cover; /* Ensure the image fills the area without distortion */
+        border-radius: 10px; /* Optional: Add rounded corners */
+      }
+
+      #certificates-section .row.mb-5 {
+        margin-bottom: 50px; /* Adjust gap between rows */
+      }
+
+      /*
       @media (max-width: 768px) {
           .navbar-nav {
               flex-direction: column;
@@ -164,112 +203,112 @@
 
       /* Hero Section Responsiveness */
       .hero .row {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
       }
 
       @media (max-width: 992px) {
-          .hero .one-third,
-          .hero .one-forth {
-              width: 100%;
-              text-align: center;
-          }
+        .hero .one-third,
+        .hero .one-forth {
+          width: 100%;
+          text-align: center;
+        }
 
-          .hero .one-third img {
-              max-width: 300px;
-              margin: 0 auto;
-          }
+        .hero .one-third img {
+          max-width: 300px;
+          margin: 0 auto;
+        }
       }
 
       /* About Section Responsiveness */
       .about-mf .row {
-          display: flex;
-          flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
       }
 
       @media (max-width: 992px) {
-          .about-mf .col-md-6 {
-              width: 100%;
-              margin-bottom: 20px;
-          }
+        .about-mf .col-md-6 {
+          width: 100%;
+          margin-bottom: 20px;
+        }
       }
 
       /* Blog Section Responsiveness */
       .blog-section .row {
-          display: flex;
-          flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
       }
 
       @media (max-width: 992px) {
-          .blog-section .col-md-4 {
-              width: 50%;
-              padding: 10px;
-          }
+        .blog-section .col-md-4 {
+          width: 50%;
+          padding: 10px;
+        }
       }
 
       @media (max-width: 576px) {
-          .blog-section .col-md-4 {
-              width: 100%;
-          }
+        .blog-section .col-md-4 {
+          width: 100%;
+        }
       }
 
       /* Image Responsiveness */
       img {
-          max-width: 100%;
-          height: auto;
-          object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
       }
 
       /* Contact Section Responsiveness */
       .contact-info .row {
-          display: flex;
-          flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
       }
 
       @media (max-width: 768px) {
-          .contact-info .col-md-6 {
-              width: 100%;
-              margin-bottom: 20px;
-          }
+        .contact-info .col-md-6 {
+          width: 100%;
+          margin-bottom: 20px;
+        }
       }
 
       /* Flexible Buttons */
       .btn {
-          display: inline-block;
-          padding: 50px 70px;
-          margin: 5px;
-          width: auto;
-          max-width: 100%;
+        display: inline-block;
+        padding: 50px 70px;
+        margin: 5px;
+        width: auto;
+        max-width: 100%;
       }
 
       /* Responsive Animations and Transitions */
       @media (prefers-reduced-motion: reduce) {
-          * {
-              animation: none !important;
-              transition: none !important;
-          }
+        * {
+          animation: none !important;
+          transition: none !important;
+        }
       }
       @media (max-width: 768px) {
-    .counter-wrap .text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+        .counter-wrap .text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
 
-    .counter-wrap .row.justify-content-center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        .counter-wrap .row.justify-content-center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
-    .counter-wrap .text .btn {
-        display: inline-block;
-        margin: 10px auto;
-        text-align: center;
-    }
-}
+        .counter-wrap .text .btn {
+          display: inline-block;
+          margin: 10px auto;
+          text-align: center;
+        }
+      }
       @keyframes typing {
         from {
           width: 0;
@@ -331,15 +370,25 @@
               <a href="#resume-section" class="nav-link"><span>Resume</span></a>
             </li>
             <li class="nav-item">
+              <a href="#project-section" class="nav-link"
+                ><span>Projects</span></a
+              >
+            </li>
+            <li class="nav-item">
               <a href="#blog-section" class="nav-link"><span>Blogs</span></a>
             </li>
-            <!-- <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li> -->
+			<li class="nav-item">
+				<a href="#certificates-section"
+				class="nav-link"
+				  ><span>Achievements</span></a
+				>
+			  </li>
             <li class="nav-item">
               <a href="#contact-section" class="nav-link"
                 ><span>Contact</span></a
               >
             </li>
-            
+
           </ul>
         </div>
       </div>
@@ -413,10 +462,6 @@
                   <br />
                   <br />
                   <h2>A Junior CV Analyst</h2>
-                  <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-                  <!-- <br> -->
-                  <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
-							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
                 </div>
               </div>
             </div>
@@ -437,9 +482,10 @@
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
                         <img
-                          src="Mypicture.png"
+                          src="Mypicture1.png"
                           class="img-fluid rounded b-shadow-a"
                           alt
+                          style="width: 100%; max-width: 800px"
                         />
                       </div>
                     </div>
@@ -701,12 +747,253 @@
           <div class="col-md-6 text-center ftco-animate">
             <p>
               <a
-                href="https://drive.google.com/drive/folders/1BNejAfKqOigljRw06OVliDxB2mtj2_bi"
+                href="https://drive.google.com/file/d/1HniWMfHGFbHQLVNld1fdPf5RPvLANEWW/view?usp=sharing"
                 class="btn btn-primary py-4 px-5"
                 target="_blank"
                 >Download CV</a
               >
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>
+              Below are the sample projects showcasing my work in various
+              domains including machine learning, computer vision, and AI-driven
+              solutions.
+            </p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://github.com/Aiengineer1/Nlp_Empathetic_Chatbot.git"
+                target="_blank"
+                class="block-20 zoom-effect"
+                style="background-image: url('NLP.webp')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://github.com/Aiengineer1/Nlp_Empathetic_Chatbot.git"
+                    target="_blank"
+                    ><strong>Empathetic Emotional Chatbot</strong></a
+                  >
+                </h3>
+                <p>
+                  Developed an empathetic NLP chatbot with sentiment and emotion
+                  detection for better user interactions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://github.com/Aiengineer1/Plant_Disease_Detection_Cv_Project.git"
+                target="_blank"
+                class="block-20 zoom-effect"
+                style="background-image: url('plant.png')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://github.com/Aiengineer1/Plant_Disease_Detection_Cv_Project.git"
+                    target="_blank"
+                    ><strong>Plant Disease Detection</strong></a
+                  >
+                </h3>
+                <p>
+                  Using deep learning models to detect plant diseases for early
+                  identification and improved crop care.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+              <a
+                href="https://github.com/Aiengineer1/Suduko_game.git"
+                target="_blank"
+                class="block-20 zoom-effect"
+                style="background-image: url('suduko.png')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://github.com/Aiengineer1/Suduko_game.git"
+                    target="_blank"
+                    ><strong>Suduko Game</strong></a
+                  >
+                </h3>
+                <p>
+                  A Python-based Sudoku game that allows users to solve puzzles
+                  with features like auto-generation, validation, and hints.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://github.com/Aiengineer1/Nutritional_Analysis_CV_Project.git"
+                target="_blank"
+                class="block-20 zoom-effect"
+                style="background-image: url('Nutrition.png')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://github.com/Aiengineer1/Nutritional_Analysis_CV_Project.git"
+                    target="_blank"
+                    ><strong>Nutritional Analysis</strong></a
+                  >
+                </h3>
+                <p>
+                  Developed a computer vision-based system for fruit recognition
+                  and nutritional analysis from images.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://github.com/Aiengineer1/KRR-Robogarden.git"
+                target="_blank"
+                class="block-20 zoom-effect"
+                style="background-image: url('Robogarden.webp')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://github.com/Aiengineer1/KRR-Robogarden.git"
+                    target="_blank"
+                    ><strong>Robo Garden</strong></a
+                  >
+                </h3>
+                <p>
+                  Developed a robotic car a robotic car that autonomously
+                  manages garden care through smart decision-making.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://github.com/Aiengineer1/ML-Assignments.git"
+                target="_blank"
+                class="block-20 zoom-effect"
+                style="background-image: url('ML.png')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://github.com/Aiengineer1/ML-Assignments.git"
+                    target="_blank"
+                    ><strong>ML Concepts in Action</strong></a
+                  >
+                </h3>
+                <p>
+                  Implemented key ML concepts through hands-on assignments,
+                  focusing on preprocessing, training, and evaluation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://github.com/Aiengineer1/DL-Assignments-Projects.git"
+                target="_blank"
+                class="block-20 zoom-effect"
+                style="background-image: url('DL.jpg')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://github.com/Aiengineer1/DL-Assignments-Projects.git"
+                    target="_blank"
+                    ><strong>Hands-On Deep Learning</strong></a
+                  >
+                </h3>
+                <p>
+                  Applied deep learning techniques through hands-on assignments,
+                  focusing on building and optimizing neural networks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://github.com/Aiengineer1/BrunoBot-AI-chatbot.git"
+                target="_blank"
+                class="block-20 zoom-effect"
+                style="background-image: url('Brunobot.jpeg')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a
+                    href="https://github.com/Aiengineer1/BrunoBot-AI-chatbot.git"
+                    target="_blank"
+                    ><strong>Bruno Bot(AI-Chatbot)</strong></a
+                  >
+                </h3>
+                <p>
+                  Build a simple chatbot,named BrunoBot, using Aiml, prolog,
+                  NLP, ML, and web scraping for interactive conversations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div
+        class="ftco-section img margin-top"
+        style="background-image: url(images/bg_1.jpg); margin-top: 20px;"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7 ftco-animate text-center">
+              <h2>More projects on<span> Github </span></h2>
+              <div class="heading">
+                <h4>
+                  Passionate about AI, building intelligent systems, and
+                  uncovering insights from data
+                </h4>
+                <br />
+                <p>
+                  <a
+                    href="https://github.com/Aiengineer1"target="_blank"
+                    class="btn btn-primary py-3 px-5"
+                    >GitHub</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -897,9 +1184,8 @@
                   >
                 </h3>
                 <p>
-                  A simple guide to how Association Rule Learning finds hidden
-                  patterns in data to improve recommendations, sales, and
-                  predictions.
+                  A guide to how Association Rule Learning uncovers patterns to
+                  enhance recommendations, sales, and predictions.
                 </p>
               </div>
             </div>
@@ -923,9 +1209,8 @@
                   >
                 </h3>
                 <p>
-                  Sequential Pattern Mining identifies recurring patterns in
-                  data sequences to predict future events, enhancing
-                  applications like recommendations.
+                  Sequential Pattern Mining uncovers recurring patterns to
+                  predict future events and improve recommendations.
                 </p>
               </div>
             </div>
@@ -949,9 +1234,8 @@
                   >
                 </h3>
                 <p>
-                  LLMs are AI systems trained on vast text data, enabling
-                  natural language understanding and powering chatbots, with
-                  applications in many.
+                  LLMs are AI systems trained on text data for natural language
+                  understanding, powering chatbots and various applications.
                 </p>
               </div>
             </div>
@@ -1053,9 +1337,8 @@
                   >
                 </h3>
                 <p>
-                  An in-depth guide to the IoT infrastructure and technical
-                  foundations driving the sustainable development of modern
-                  smart cities.
+                  A guide to the IoT infrastructure and technology behind the
+                  sustainable development of smart cities.
                 </p>
               </div>
             </div>
@@ -1079,9 +1362,8 @@
                   >
                 </h3>
                 <p>
-                  An insightful overview of how IoT is revolutionizing
-                  agriculture through precision farming and sustainable
-                  practices.
+                  An overview of how IoT is transforming agriculture with
+                  precision farming and sustainable practices.
                 </p>
               </div>
             </div>
@@ -1105,8 +1387,8 @@
                   >
                 </h3>
                 <p>
-                  A comprehensive exploration of edge computing in IoT, focusing
-                  on its architecture, and impact on real-time data processing.
+                  An exploration of edge computing in IoT, highlighting its
+                  architecture and impact on real-time data processing.
                 </p>
               </div>
             </div>
@@ -1366,68 +1648,14 @@
                 domains.
               </h4>
               <br />
-			  <p>
-              <a
-                href="https://medium.com/@f2021376104"
-                class="btn btn-primary py-4 px-5"
-                target="_blank"
-                style="margin-top: 20px"
-                >Medium</a
-              >
-			  </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      class="ftco-section contact-section ftco-no-pb"
-      id="contact-section"
-    >
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-map-signs"></span>
-              </div>
-              <h3 class="mb-4">Address</h3>
-              <p>Khewra Jhelum, Pakistan</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-phone2"></span>
-              </div>
-              <h3 class="mb-4">Contact Number</h3>
-              <p><a href="tel://0101010101">+923405899982</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-paper-plane"></span>
-              </div>
-              <h3 class="mb-4">Email Address</h3>
               <p>
-                <a href="mailto:info@yoursite.com">maheensadaf535@gmail.com</a>
+                <a
+                  href="https://medium.com/@f2021376104"
+                  class="btn btn-primary py-4 px-5"
+                  target="_blank"
+                  style="margin-top: 20px"
+                  >Medium</a
+                >
               </p>
             </div>
           </div>
@@ -1435,6 +1663,150 @@
       </div>
     </section>
 
+    <section class="ftco-section" id="certificates-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Certificates</h1>
+            <h2 class="mb-4">My Achievements</h2>
+            <p>
+              Explore my latest certifications that highlight my expertise and
+              skills in various fields.
+            </p>
+          </div>
+        </div>
+
+        <!-- First Row (3 Certificates) -->
+        <div class="row justify-content-between mb-5">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="cert-entry justify-content-end">
+              <a
+                href="PythonforDataScienceandAI Certificate.jpg"
+                target="_blank"
+              >
+                <img
+                  src="PythonforDataScienceandAI Certificate.jpg"
+                  alt="Python for Data Science and AI"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="cert-entry justify-content-end">
+              <a href="free lancing certificates.jpg" target="_blank">
+                <img
+                  src="free lancing certificates.jpg"
+                  alt="Freelancing Certificates"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="cert-entry justify-content-end">
+              <a href="Data MIning Certificate.png" target="_blank">
+                <img
+                  src="Data MIning Certificate.png"
+                  alt="Data Mining Certificate"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row (2 Centered Certificates) -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="cert-entry justify-content-end">
+              <a href="Dean Merit Certificate.jpg" target="_blank">
+                <img
+                  src="Dean Merit Certificate.jpg"
+                  alt="Dean Merit Certificate"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="cert-entry justify-content-end">
+              <a href="Certificate of merit.jpg" target="_blank">
+                <img
+                  src="Certificate of merit.jpg"
+                  alt="Certificate of Merit"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Contact</h1>
+			  <h2 class="mb-4">Contact Me</h2>
+			  <p>Below are the details to reach out to me</p>
+			</div>
+		  </div>
+		</div>
+	  
+		<div class="row d-flex contact-info mb-5 justify-content-center">
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box p-4 text-center">
+			  <div class="icon d-flex align-items-center justify-content-center">
+				<span class="icon-map-signs"></span>
+			  </div>
+			  <h3 class="mb-4">Address</h3>
+			  <p>Khewra Jhelum, Pakistan</p>
+			</div>
+		  </div>
+	  
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box p-4 text-center">
+			  <div class="icon d-flex align-items-center justify-content-center">
+				<a href="tel:+923405899982"><span class="icon-phone2"></span></a>
+			  </div>
+			  <h3 class="mb-4">Contact Number</h3>
+			  <p><a href="tel:+923405899982">+923405899982</a></p>
+			</div>
+		  </div>
+	  
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box p-4 text-center">
+			  <div class="icon d-flex align-items-center justify-content-center">
+				<a href="mailto:maheensadaf535@gmail.com">
+				  <span class="icon-paper-plane"></span>
+				</a>
+			  </div>
+			  <h3 class="mb-4">Email Address</h3>
+			  <p>
+				<a href="mailto:maheensadaf535@gmail.com">maheensadaf535@gmail.com</a>
+			  </p>
+			</div>
+		  </div>
+	  
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box p-4 text-center">
+			  <div class="icon d-flex align-items-center justify-content-center">
+				<a href="https://www.linkedin.com/in/maheen-sadaf-063171281/?trk=opento_sprofile_topcard" target="_blank">
+				  <span class="icon-linkedin"></span>
+				</a>
+			  </div>
+			  <h3 class="mb-4">LinkedIn</h3>
+			  <p>
+				<a href="https://www.linkedin.com/in/maheen-sadaf-063171281/?trk=opento_sprofile_topcard" target="_blank">
+				  My linkedin
+				</a>
+			  </p>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
     <footer class="ftco-footer ftco-section">
       <div class="container">
         <div class="row">
@@ -1445,7 +1817,7 @@
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              All rights reserved 
+              All rights reserved
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
@@ -1490,7 +1862,6 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/scrollax.min.js"></script>
-
     <script src="js/main.js"></script>
   </body>
 </html>
